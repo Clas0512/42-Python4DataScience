@@ -11,9 +11,10 @@ def check_args(args: list):
             args.append(args_input)
     if (args.__len__() > 1):
         raise Exception("AssertionError: argument length invalid")
+        
 
 def print_features(features: dict):
-    print(f"The text contains { sum(features.values()) } characters:")
+    print(f"\nThe text contains { sum(features.values()) } characters:")
     print(f"{ features['upper_cases'] } upper letters")
     print(f"{ features['lower_cases'] } lower letters")
     print(f"{ features['punctuation_marks'] } punctuation marks")
@@ -50,10 +51,6 @@ def main():
         print_features(taken_features)
     except Exception as msg:
         print(msg)
-
-def deneme():
-    sa = {'esad': 0}
-    print(f' { sa["esad"] }')
 
 if __name__ == ("__main__"):
     # deneme()
