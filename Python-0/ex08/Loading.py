@@ -1,4 +1,22 @@
-def ft_tqdm(lst: range) -> None:
+def ft_tqdm(lst: range):
+    """
+    Custom implementation of a progress bar for iterating over a list or range
+    of items.
+
+    Args:
+        lst (range): A range or iterable for which progress needs to be shown.
+
+    Yields:
+        item: The next item in the iterable.
+
+    This function simulates the behavior of the 'tqdm' library by displaying a
+    progress bar. The progress bar shows the percentage completed and the
+    number of items processed out of the total.
+
+    Example:
+        >>> for i in ft_tqdm(range(100)):
+        >>>     # Perform operations here
+    """
     length = 95
     total = lst.stop - lst.start
 
