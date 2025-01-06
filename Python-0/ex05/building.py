@@ -16,11 +16,11 @@ def check_args(args: list):
     while (args.__len__() < 1 or args[0] is None):
         args_input = ""
         try:
-            args_input = input("What is the text to count?\n")
+            print("What is the text to count?\n")
+            args_input = input()
             args.append(args_input + " ")
         except EOFError:
-            print("\nCtrl + D yakalandı! Program sonlandırılıyor...")
-            args.append(args_input)
+            break
     if (args.__len__() > 1):
         raise Exception("AssertionError: argument length invalid")
 
