@@ -2,7 +2,7 @@ LICENSE
 README.md
 pyproject.toml
 src/ft_package/__init__.py
-src/ft_package/example.py
+src/ft_package/tester.py
 src/ft_package.egg-info/PKG-INFO
 src/ft_package.egg-info/SOURCES.txt
 src/ft_package.egg-info/dependency_links.txt
