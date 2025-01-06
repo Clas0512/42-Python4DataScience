@@ -85,11 +85,10 @@ def print_encoded_morse(NESTED_MORSE: dict, argument: str):
         >>> print_encoded_morse({'A': '.-', 'B': '-...'}, 'AB')
         .- -...
     """
-    for letter in argument:
-        if letter == ' ':
+    for i in range(len(argument)):
+        print(f'{ NESTED_MORSE[argument[i].upper()] }', end='')
+        if (i != len(argument) - 1):
             print(' ', end='')
-        else:
-            print(f'{ NESTED_MORSE[letter.upper()] }', end='')
     print()
 
 
