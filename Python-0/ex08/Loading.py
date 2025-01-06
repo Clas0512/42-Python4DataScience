@@ -1,4 +1,4 @@
-def ft_tqdm(lst: range):
+def ft_tqdm(lst: range) -> None:
     """
     Custom implementation of a progress bar for iterating over a list or range
     of items.
